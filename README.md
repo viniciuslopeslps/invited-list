@@ -1,2 +1,2 @@
-# alura-listavip-sprinboot
-Repositório do curso de Spring Boot
+# invite list - Spring boot play
+

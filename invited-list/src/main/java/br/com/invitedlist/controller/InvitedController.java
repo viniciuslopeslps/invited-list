@@ -37,4 +37,10 @@ public class InvitedController {
         return "redirect:invited-list";
     }
 
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+    public String save(@RequestParam("id") Long id) {
+        Invited invited = service.findOne(id);
+        service.delete(invited);
+        return "redirect:invited-list";
+    }
 }

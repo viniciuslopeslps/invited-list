@@ -15,9 +15,15 @@ public class InvitedService {
         return repository.findAll();
     }
 
-
     public Invited save(Invited invited) {
         return repository.save(invited);
     }
 
+    public Invited findOne(Long id) {
+        return repository.findOne(id);
+    }
+
+    public void delete(Invited invited) {
+        repository.delete(invited);
+    }
 }
